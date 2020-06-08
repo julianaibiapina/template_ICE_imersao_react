@@ -1,0 +1,133 @@
+:root{
+    --title-color: #EB5D62;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+header h3{
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--title-color);
+}
+
+.titulo1{
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: 200;
+    color: var(--title-color);
+    margin-bottom: 4px;
+
+}
+
+.titulo2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--title-color);
+    margin-top: 0;
+}
+
+.texto{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Ropa Sans', sans-serif;
+    color: var(--title-color);
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .content{
+    width: 75%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url('../images/home.svg');
+    background-repeat: no-repeat;
+    background-position: right 150px;
+}
+
+.container header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container header a{
+    display: flex;
+}
+
+.container main{
+    max-width: 400px;
+    height: 80%;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button{
+
+    height: 40px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 10px;
+
+    background-color: var(--title-color);
+    color: white;
+
+    transition: 400ms;
+}
+
+.button:hover{
+    background-color: #D12F3B;
+}
+
+main a{
+    width: 30%;
+}
+
+header a{
+    width: 90px;
+}
+
+@media(max-width:850px){
+    .container .content{  
+        background-image: none;
+
+        
+        align-items: center;
+        text-align: center;
+    }
+
+    .container header a{
+        position: absolute;
+        bottom: 30px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container main{
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+

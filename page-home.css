@@ -1,0 +1,88 @@
+body{
+    background: rgb(186,231,148);
+    background: linear-gradient(45deg, rgba(186,231,148,1) 0%, rgba(28,177,186,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page-home{
+    height: 100vh;
+    background: url("./images/img-page-home.svg");
+    background-repeat: no-repeat;
+    background-position: 3vh bottom;
+
+}
+
+#page-home .content{
+    width: 95%;
+    max-width: 1100px;
+    height: 100%;
+
+    margin:0 auto ;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+#page-home header img{
+    height: 50px;
+}
+
+#page-home header div{
+    display: flex;
+}
+
+#page-home header a{
+    display: flex;
+    color: white;
+    font-weight: 700;
+    margin-left: 56px;
+}
+
+#page-home main{
+    max-width: 500px;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1{
+    font-size: 54px;
+}
+
+#page-home main p{
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+}
+
+#page-home main a{
+    color: white;
+
+
+    width: 100%;
+    max-width: 300px;
+    height: 64px;
+
+    border:2px solid white;
+    border-radius: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+
+    transition: 400ms;
+    
+}
