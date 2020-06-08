@@ -8,7 +8,7 @@ body{
 
 #page-home{
     height: 100vh;
-    background: url("./images/img-page-home.svg");
+    background: url("../images/img-page-home.svg");
     background-repeat: no-repeat;
     background-position: 3vh bottom;
 
@@ -85,4 +85,8 @@ body{
 
     transition: 400ms;
     
+}
+
+#page-home main a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
