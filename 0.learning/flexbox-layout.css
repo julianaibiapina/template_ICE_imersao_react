@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+header{
+    background-color: white;
+    padding: 2vh 20vw;
+
+    border-bottom: 2px solid #DADADA;
+
+}
+
+.container{
+    width: 85vw;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 15%;
+    min-height: 350px;
+    min-width: 250px;
+
+    background-color: white;
+    /* border: 2px solid gray; */
+    color: grey;
+    font-size: 2em;
+
+    padding: 20px;
+    margin: 15px;
+   
+    
+}
+
+
+
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
