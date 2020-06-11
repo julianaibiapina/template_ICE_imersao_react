@@ -1,0 +1,22 @@
+:root{
+    --primary-color: #E86671;
+    --efect-color:#F1B0B0;
+    --content-color: #6c6c80;
+    --gradient: linear-gradient(45deg, rgba(186,231,148,1) 0%, rgba(28,177,186,1) 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #F2F2F2;
+    -webkit-font-smoothing: antialiased;
+    color: var(--content-color);
+}

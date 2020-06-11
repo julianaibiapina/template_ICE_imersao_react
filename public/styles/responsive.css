@@ -1,0 +1,17 @@
+/* Responsividade para quando a tela for de 500px ou menos, coloca os links empilhados*/
+
+@media screen and (max-width: 650px){
+    header{
+        padding: 2vh 10vw;
+    }
+
+    header a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .menu{
+        float: none;
+    }
+}

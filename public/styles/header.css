@@ -1,0 +1,46 @@
+header{
+    background-color: white;
+    padding: 2vh 20vw;
+    border-bottom: 2px solid #DADADA;
+
+    overflow: hidden;
+
+}
+
+header a{
+    float: left;
+    /* color: var(--primary-color); */
+    color: var(--content-colo);
+
+    text-align: center;
+
+    padding: 10px;
+
+    font-size: 18px;
+    line-height: 25px;
+
+    transition: 450ms;
+
+}
+
+.logo{
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    background-color: var(--efect-color);
+    color: white;;
+}
+
+header a.active{
+    /* background-color: var(--efect-color); */
+    /* color: white; */
+    color: var(--primary-color);
+}
+
+.menu{
+    float: right;
+}
+
