@@ -1,150 +1,135 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Grids</title>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@600;800&family=Ropa+Sans&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="./styles/base.css">
-        <link rel="stylesheet" href="./styles/header.css">
-        <link rel="stylesheet" href="./styles/cards-container.css">
-        <link rel="stylesheet" href="./styles/card-content.css">
-        <link rel="stylesheet" href="./styles/feature.css">
+{% extends "layout.html"%}
 
-        <link rel="stylesheet" href="./styles/responsive.css">
-        
-    </head>
 
-    <body>
-        <header>
-            
-            <a href="#" title="Logo" class="logo">LOGO</a>
+
+{% block styles %}
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/cards-container.css">
+    <link rel="stylesheet" href="./styles/card-content.css">
+    <link rel="stylesheet" href="./styles/feature.css">
+{% endblock styles %}
+
+{% block header %}
+    <a href="#" title="Logo" class="logo">LOGO</a>
             
 
-            <div class="menu">
+    <div class="menu">
+        
+        <a href="#" title="Home" >Home</a> 
+
+        <a href="#" title="sobre">Sobre</a>
+    
+
+    
+        <a href="#" title="Portifólio">Portifólio</a>
+    
+
+    
+        <a href="#" title="Blog" class="active">Blog</a>
                 
-                <a href="#" title="Home" >Home</a> 
+    </div>
+{% endblock header %}
 
-                <a href="#" title="sobre">Sobre</a>
-            
 
+{% block content %}
+    <div class="container">
+        <div class="card shadow">
+            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
             
-                <a href="#" title="Portifólio">Portifólio</a>
-            
-
-            
-                <a href="#" title="Blog" class="active">Blog</a>
-                     
+            <div class="card-text">
+                <h1>Responsividade com flexbox</h1>
+                <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
             </div>
-        </header>
-
-        <main>
             
-            <div class="container">
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
-                    
-                    <div class="card-text">
-                        <h1>Responsividade com flexbox</h1>
-                        <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
-                    </div>
-                    
-                    <div class="card-foot">
-                        <a href="#"><span>Leia mais</span></a>
-                    </div>
-                    
-                </div>
+            <div class="card-foot">
+                <a href="#"><span>Leia mais</span></a>
+            </div>
+            
+        </div>
 
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1591776346443-a34eab8ea041?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="imagem bonita">
-                    
-                    <div class="card-text">
-                        <h1>Responsividade com flexbox</h1>
-                        <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
-                    </div>
-                    
-                    <div class="card-foot">
-                        <a href="#"><span>Leia mais</span></a>
-                    </div>
-                    
-                </div>
+        <div class="card shadow">
+            <img src="https://images.unsplash.com/photo-1591776346443-a34eab8ea041?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="imagem bonita">
+            
+            <div class="card-text">
+                <h1>Responsividade com flexbox</h1>
+                <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
+            </div>
+            
+            <div class="card-foot">
+                <a href="#"><span>Leia mais</span></a>
+            </div>
+            
+        </div>
 
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
-                    
-                    <div class="card-text">
-                        <h1>Responsividade com flexbox</h1>
-                        <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
-                    </div>
-                    
-                    <div class="card-foot">
-                        <a href="#"><span>Leia mais</span></a>
-                    </div>
-                    
-                </div>
+        <div class="card shadow">
+            <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
+            
+            <div class="card-text">
+                <h1>Responsividade com flexbox</h1>
+                <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
+            </div>
+            
+            <div class="card-foot">
+                <a href="#"><span>Leia mais</span></a>
+            </div>
+            
+        </div>
 
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1510843572979-e4b9e790fdd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
-                    
-                    <div class="card-text">
-                        <h1>Responsividade com flexbox</h1>
-                        <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
-                    </div>
-                    
-                    <div class="card-foot">
-                        <a href="#"><span>Leia mais</span></a>
-                    </div>
-                    
-                </div>
+        <div class="card shadow">
+            <img src="https://images.unsplash.com/photo-1510843572979-e4b9e790fdd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
+            
+            <div class="card-text">
+                <h1>Responsividade com flexbox</h1>
+                <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
+            </div>
+            
+            <div class="card-foot">
+                <a href="#"><span>Leia mais</span></a>
+            </div>
+            
+        </div>
 
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1528644962643-b689d50d44fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
-                    
-                    <div class="card-text">
-                        <h1>Responsividade com flexbox</h1>
-                        <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
-                    </div>
-                    
-                    <div class="card-foot">
-                        <a href="#"><span>Leia mais</span></a>
-                    </div>
-                    
-                </div>
+        <div class="card shadow">
+            <img src="https://images.unsplash.com/photo-1528644962643-b689d50d44fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
+            
+            <div class="card-text">
+                <h1>Responsividade com flexbox</h1>
+                <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
+            </div>
+            
+            <div class="card-foot">
+                <a href="#"><span>Leia mais</span></a>
+            </div>
+            
+        </div>
 
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1589466725882-f47191476e8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
-                    
-                    <div class="card-text">
-                        <h1>Responsividade com flexbox</h1>
-                        <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
-                    </div>
-                    
-                    <div class="card-foot">
-                        <a href="#"><span>Leia mais</span></a>
-                    </div>
-                    
-                </div>
+        <div class="card shadow">
+            <img src="https://images.unsplash.com/photo-1589466725882-f47191476e8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
+            
+            <div class="card-text">
+                <h1>Responsividade com flexbox</h1>
+                <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
+            </div>
+            
+            <div class="card-foot">
+                <a href="#"><span>Leia mais</span></a>
+            </div>
+            
+        </div>
 
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1585935238141-240f3e5567fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
-                    
-                    <div class="card-text">
-                        <h1>Responsividade com flexbox</h1>
-                        <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
-                    </div>
-                    
-                    <div class="card-foot">
-                        <a href="#"><span>Leia mais</span></a>
-                    </div>
-                    
-                </div>
+        <div class="card shadow">
+            <img src="https://images.unsplash.com/photo-1585935238141-240f3e5567fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="imagem bonita">
+            
+            <div class="card-text">
+                <h1>Responsividade com flexbox</h1>
+                <h2>Alguma coisa mais explicadinha sobre o tema.</h2>
+            </div>
+            
+            <div class="card-foot">
+                <a href="#"><span>Leia mais</span></a>
+            </div>
+            
+        </div>
                 
-            </div
-        </main>
-        
-        
-    </body>
-</html>
+            </div>
+{% endblock content %}
