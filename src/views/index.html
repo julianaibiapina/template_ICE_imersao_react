@@ -6,28 +6,10 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/cards-container.css">
     <link rel="stylesheet" href="./styles/card-content.css">
-    <link rel="stylesheet" href="./styles/feature.css">
 {% endblock styles %}
 
 {% block header %}
-    <a href="#" title="Logo" class="logo">LOGO</a>
-            
-
-    <div class="menu">
-        
-        <a href="#" title="Home" >Home</a> 
-
-        <a href="#" title="sobre">Sobre</a>
-    
-
-    
-        <a href="#" title="Portifólio">Portifólio</a>
-    
-
-    
-        <a href="#" title="Blog" class="active">Blog</a>
-                
-    </div>
+    {% include "partials/header.html"%}
 {% endblock header %}
 
 
