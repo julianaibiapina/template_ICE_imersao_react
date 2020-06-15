@@ -32,16 +32,29 @@
                 </div>
             
             </div>
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Entrar</button>
+            <a href="/cadastro-user">Sing up</a>
         
         </fieldset>
     
     </form>
 
-    {% if check %}
-        <p>Bem vindo(a)!</p>
-    {%else%}
-        <p>Nome de usuário ou senha incorreta.</p>
+   
+    {% if check == false %}
+        <p>Nome de usuário ou senha incorretos.</p>
     {% endif %}
 
 {% endblock content %}
+
+{% block scripts %}
+    <script>
+        const element = document.getElementById("login")
+        element.classList.add("active");
+
+        {% if check %}
+            window.location = "/home-user"    
+        {% endif %}
+        
+    </script>
+{% endblock scripts %}
+

@@ -1,0 +1,26 @@
+{% extends "layout.html"%}
+
+{% block styles %}
+    <link rel="stylesheet" href="./styles/header.css">
+{% endblock styles %}
+
+{% block header %}
+    {% include "partials/header.html"%}
+{% endblock header %}
+
+{% block content %}
+
+    
+    <p>Bem vindo(a) {{ username }} !</p>
+    <form action="/logout" method="POST"><button type="submit">sair</button></form>
+    
+    
+
+{% endblock content %}
+
+{% block scripts %}
+    <script>
+        const element = document.getElementById("perfil")
+        element.classList.add("active");
+    </script>
+{% endblock scripts %}

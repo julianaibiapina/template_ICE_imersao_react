@@ -43,8 +43,12 @@
     
     </form>
 
-    {% if saved %}
-        <p>Cadastro Concluído</p>
+    {% if check %}
+        <p>Cadastrado.</p>
+    {% endif %}
+
+    {% if check == false %}
+        <p>Não cadastrado.</p>
     {% endif %}
 
 {% endblock content %}

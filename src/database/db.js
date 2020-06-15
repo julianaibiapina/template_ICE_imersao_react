@@ -11,11 +11,25 @@ db.serialize( () => {
     // -------- cria tabela user
     db.run(`
         CREATE TABLE IF NOT EXISTS user (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            user_name TEXT,
+            user_name TEXT PRIMARY KEY,
             name TEXT,
             password TEXT
         );
+    `)
+
+
+    // -------- cria tabela article
+    db.run(`
+            CREATE TABLE IF NOT EXISTS article (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id TEXT, 
+                title TEXT,
+                subtitle TEXT,
+                date TEXT,
+                conteudo TEXT,
+                link_image TEXT,
+                FOREIGN KEY(user_id) REFERENCES user(user_name)
+            )
     `)
 
     // -------- Inserir dados
@@ -39,7 +53,7 @@ db.serialize( () => {
 
 
     // -------- Deletar dados
-    // db.run(`DELETE FROM user WHERE id = ?;`, [8], function(err){
+    // db.run(`DELETE FROM user WHERE id = ?;`, [40], function(err){
     //     if(err){
     //         return console.log(err)
     //     }
@@ -49,31 +63,17 @@ db.serialize( () => {
 
 
     // -------- Consutar dados
-    // db.all(`SELECT * FROM user;`, function(err, rows){
-    //     if(err){
-    //         return console.log(err)
-    //     }
+    db.all(`SELECT * FROM user;`, function(err, rows){
+        if(err){
+            return console.log(err)
+        }
 
-    //     console.log("Dados:")
-    //     console.log(rows)
-    // })
+        console.log("Dados:")
+        console.log(rows)
+    })
 
 
-    // ------ teste
-//     const query = `SELECT user_name, name, password FROM user WHERE user_name = ?;`
-//     db.get(query, ["julianaibiapina"], (err, row) => {
-//         console.log(row)
-//         if(err){
-//             // return console.error(err.message)      
-//             return res.render("login.html", {check:false})      
-//         }
-
-//         if(await bcrypt.compare(password, row.password)){
-//             return res.render("login.html", {check:true})
-//         }else{
-//             return res.render("login.html", {check:false})
-//         }
-//     })
+ 
 
 })
 
