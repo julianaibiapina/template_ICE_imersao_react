@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import PageDefault from '../../../PageDefault';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import PageDefault from '../../../PageDefault';
 import FormField from '../../../FormField';
+import Button from '../../../Button';
 
 export const Ajuste = styled.div`
     width: 100%;
@@ -14,123 +15,108 @@ export const Ajuste = styled.div`
     }
 `;
 
+function CadastroCategoria() {
+  const valoresIniciais = {
+    nome: '',
+    descricao: '',
+    cor: '#000000',
+  };
+  const [categorias, setCategorias] = useState([]);
+  const [values, setValues] = useState(valoresIniciais); // useState() retorna o valor, e uma função que permite alterar esse valor
 
-function CadastroCategoria(){
+  function setValue(chave, valor) {
+    // chave é variável, ou seja, é dinâmico mesmo que seja um atributo por isso usa o recurso do JS []
+    setValues({
+      ...values,
+      [chave]: valor,
+    });
+  }
+
+  function handleChange(infosDoEvento) {
+    setValue(
+      infosDoEvento.target.getAttribute('name'),
+      infosDoEvento.target.value,
+    );
+  }
+
+  useEffect(() => {
+    console.log("teste useEffect");
     
-    const valoresIniciais = {
-        nome: '',
-        descricao: '',
-        cor: '#000000'
-    }
-    const [categorias, setCategorias] = useState([]);
-    const [values, setValues] = useState(valoresIniciais); // useState() retorna o valor, e uma função que permite alterar esse valor
+    const URL = 'http://localhost:3000/categorias';
+    // esta função retorna uma promise
+    fetch(URL)
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
 
-    function setValue(chave, valor){
-        // chave é variável, ou seja, é dinâmico mesmo que seja um atributo por isso usa o recurso do JS []
-        setValues({
-            ...values,
-            [chave]: valor,
-        })
-    }
+  }, []);
 
- 
-    function handleChange(infosDoEvento) {
-        
-        setValue(
-            infosDoEvento.target.getAttribute('name'),
-            infosDoEvento.target.value
-        );
-      }
+  return (
+    <PageDefault>
+      <h1>
+        Cadastro de categoria <br/>
+        {values.nome}
+      </h1>
 
-    return (
-        <PageDefault>
-            <h1>Cadastro de categoria: {values.nome}</h1>
+      <form onSubmit={function handleSubmit(infosDoEvento) {
+        infosDoEvento.preventDefault(); // o submit default ele faz com reload, agora a gnt quer que ele submeta o form sem dar reload
+        console.log('Tentou enviar o form, né?');
 
-            <form onSubmit={function handleSubmit(infosDoEvento){
-                infosDoEvento.preventDefault(); // o submit default ele faz com reload, agora a gnt quer que ele submeta o form sem dar reload
-                console.log('Tentou enviar o form, né?');
+        setCategorias([
+          ...categorias,
+          values,
+        ]);
 
-                setCategorias([
-                    ...categorias,
-                    values
-                ]);
+        setValues(valoresIniciais);
+      }}
+      >
 
-                setValues(valoresIniciais);
-            }}>
+        <FormField
+          label="Nome da categoria"
+          type="text"
+          name="nome"
+          value={values.nome}
+          onChange={handleChange}
+        />
 
-                <FormField
-                    label='Nome da categoria:'
-                    type='text'
-                    name='nome'
-                    value={values.nome}
-                    onChange={handleChange}
-                />
-                
-                <FormField
-                    label='Descrição:'
-                    type='textarea'
-                    name='descricao'
-                    value={values.descricao}
-                    onChange={handleChange}
-                />
+        <FormField
+          label="Descrição"
+          type="textarea"
+          name="descricao"
+          value={values.descricao}
+          onChange={handleChange}
+        />
 
-                <FormField
-                    label='Cor:'
-                    type='color'
-                    name='cor'
-                    value={values.cor}
-                    onChange={handleChange}
-                />
+        <FormField
+          label="Cor"
+          type="color"
+          name="cor"
+          value={values.cor}
+          onChange={handleChange}
+        />
+        <Button>
+          Cadastrar
+        </Button>
+      </form>
 
-                {/* <div>
-                    <label>
-                        Descrição:
-                        <textarea
-                            type="text"
-                            value={values.descricao}
-                            name='descricao'
-                            onChange={handleChange}
-                        />
-                    </label>
-                </div> */}
-                    
-                {/* <div>
-                <label>
-                    Cor:                   
-                    <input
-                        type="color"
-                        value={values.cor}
-                        name="cor"
-                        onChange={handleChange}
-                    />
-                </label>
-                </div> */}
+      <ul>
 
-               
-                <button>
-                Cadastrar
-                </button>
-            </form>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.nome}`}>
+            {categoria.nome}
+          </li>
+        ))}
 
+      </ul>
 
-            <ul>
-                
-                {categorias.map((categoria, indice) => {
-                   return (
-                    <li key={`${categoria}${indice}`}>
-                        {categoria.nome}
-                    </li>
-                   ) 
-                })}
-                
-            </ul>
-                        
-            
-            <Link to='/'>
-                Ir para home
-            </Link>
-        </PageDefault>
-    )
+      <Link to="/">
+        Ir para home
+      </Link>
+    </PageDefault>
+  );
 }
 
 export default CadastroCategoria;
