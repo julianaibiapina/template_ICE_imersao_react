@@ -40,8 +40,8 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    console.log("teste useEffect");
-    
+    console.log('teste useEffect');
+
     const URL = 'http://localhost:3000/categorias';
     // esta função retorna uma promise
     fetch(URL)
@@ -51,13 +51,14 @@ function CadastroCategoria() {
           ...resposta,
         ]);
       });
-
   }, []);
 
   return (
     <PageDefault>
       <h1>
-        Cadastro de categoria <br/>
+        Cadastro de categoria
+        {' '}
+        <br />
         {values.nome}
       </h1>
 
