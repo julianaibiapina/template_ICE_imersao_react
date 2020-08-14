@@ -7,8 +7,8 @@ import Carousel from '../../Carousel';
 import Footer from '../../Footer';
 
 const AppWrapper = styled.div`
-  background: var(--grayDark);
-  padding-top: 94px;
+  background: #FBFAFA;
+  /* padding-top: 94px; */
 
   @media(max-width: 800px){
     padding-top: 40px;
@@ -44,13 +44,6 @@ function Home() {
         category={dadosIniciais.categorias[3]}
       />      
 
-      <Carousel
-        category={dadosIniciais.categorias[4]}
-      />      
-
-      <Carousel
-        category={dadosIniciais.categorias[5]}
-      />      
 
       <Footer />
     </AppWrapper>
