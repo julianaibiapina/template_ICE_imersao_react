@@ -7,16 +7,6 @@ export const BannerMainContainer = styled.section`
   background-size: cover; /* usa toda o espaço disponível pra ele*/
   background-position: center;
 
-  &:after {
-  position: absolute;
-  content: " ";
-  top: 78px;
-  left: 0;
-  width: 100%;
-  height: 80vh;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
   @media(max-width: 800px){
     height: auto;
     min-height: 50vh;
@@ -31,9 +21,6 @@ export const ContentAreaContainer = styled.section`
   margin-right: 5%;
   height: 100%;
 
-  position:relative;
-  z-index:1;
-  
   @media (max-width:800px){
     padding-top: 100px;
     flex-direction: column;
