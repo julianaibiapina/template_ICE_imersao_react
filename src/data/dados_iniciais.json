@@ -1,224 +1,183 @@
 {
   "categorias": [
     {
-      "titulo": "De Frente com Jesus",
-      "link": "https://www.youtube.com/channel/UC5TFHpho3xXDjpchvBrzEVQ/videos",
+      "titulo": "Front End",
+      "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "",
-        "url": ""
+        "text": "Formação de Front End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
       },
       "videos": [
         {
-          "titulo": "De frente com Jesus: Lezados demais!",
-          "url": "https://www.youtube.com/watch?v=dbLfAu-8k0w"
+          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
         },
         {
-          "titulo": "De frente com Jesus: 'Fracassados demais!'",
-          "url": "https://www.youtube.com/watch?v=Ain7ttZM_LM"
+          "titulo": "SEO com React",
+          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
         },
         {
-          "titulo": "De Frente com Jesus: Vendido demais!",
-          "url": "https://www.youtube.com/watch?v=oYtoxDNuNmo"
+          "titulo": "Componentização com VanillaJS #AluraMais",
+          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
         },
         {
-          "titulo": "De Frente com Jesus: Cético demais!",
-          "url": "https://www.youtube.com/watch?v=m9scm2hWL0I"
+          "titulo": "Pare de chutar e aprenda a display: inline #01",
+          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
         },
         {
-          "titulo": "De Frente com Jesus: Tarde demais",
-          "url": "https://www.youtube.com/watch?v=pgsulSHycIE"
+          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
+          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
         },
         {
-          "titulo": "De Frente com Jesus: Sabido demais!",
-          "url": "https://www.youtube.com/watch?v=IXdd8Y20htE"
+          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
         },
         {
-          "titulo": "De frente com Jesus: Preocupada demais!",
-          "url": "https://www.youtube.com/watch?v=aN8D1Y5__Pw"
+          "titulo": "Novidades do Angular v9",
+          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
         },
         {
-          "titulo": "De frente com Jesus: Amigo demais!",
-          "url": "https://www.youtube.com/watch?v=f0hMlWAo67s"
-        },
-        {
-          "titulo": "De frente com Jesus: Indigno demais!",
-          "url": "https://www.youtube.com/watch?v=CxzAMbRk878"
-        },
-        {
-          "titulo": "De frente com Jesus: Descontrolado demais!",
-          "url": "https://www.youtube.com/watch?v=xOm5njBh9x0"
-        },
-        {
-          "titulo": "De Frente com Jesus: Cedo demais?",
-          "url": "https://www.youtube.com/watch?v=3eVw0cOhmLI"
-        },
-        {
-          "titulo": "De Frente com Jesus: Cedo demais!",
-          "url": "https://www.youtube.com/watch?v=ODgysz35gOk"
-        },
-        {
-          "titulo": "De frente com Jesus: Estribado demais!",
-          "url": "https://www.youtube.com/watch?v=VpMghvNkvV0"
-        },
-        {
-          "titulo": "De frente com Jesus: Simples demais!",
-          "url": "https://www.youtube.com/watch?v=0ONhDCwM9HQ"
-        },
-        {
-          "titulo": "De frente com Jesus: Perdido demais!",
-          "url": "https://www.youtube.com/watch?v=ltgLZgI8ths"
-        },
-        {
-          "titulo": "De frente com Jesus: Religioso demais!",
-          "url": "https://www.youtube.com/watch?v=qd35-tJ4ccI"
-        },
-        {
-          "titulo": "De Frente com Jesus: Impuro demais!",
-          "url": "https://www.youtube.com/watch?v=gCi6TMQBT18"
-        }
-
+          "titulo": "Base para aprender os frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        }        
       ]
     },
     {
-      "titulo": "2 Pedro",
+      "titulo": "Back End",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "",
-        "url": ""
+        "text": "Cursos de Back End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
       },
       "videos": [
         {
-          "titulo": "De Pedro para a Igreja",
-          "url": "https://www.youtube.com/watch?v=kPAdzcdt_i0"
+          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
+          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
         },
         {
-          "titulo": "O que Precisamos para Perseverar na Fé",
-          "url": "https://www.youtube.com/watch?v=I1jOITm9Eps"
+          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
+          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
         },
         {
-          "titulo": "A Fuga Frutífera da Fé",
-          "url": "https://www.youtube.com/watch?v=DuDfdtkREAs"
+          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
+          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
         },
         {
-          "titulo": "Relembrando o que Eu Já Sei",
-          "url": "https://www.youtube.com/watch?v=ChF-qRqYef0"
+          "titulo": "API: Dicionário do Programador",
+          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
         }, 
         {
-          "titulo": "A Credibilidade da Crença Cristã",
-          "url": "https://www.youtube.com/watch?v=y2LBc5fvYyg"
-        }, 
-        {
-          "titulo": "O Fato Falsificador da Fé",
-          "url": "https://www.youtube.com/watch?v=Fot5dGbtH_4"
-        }, 
-        {
-          "titulo": "O Julgamento de Deus aos falsos mestres",
-          "url": "https://www.youtube.com/watch?v=HU59yKMtiiU&t=1s"
-        }, 
-        {
-          "titulo": "A Insolência Imoral dos Insensatos Parte 1",
-          "url": "https://www.youtube.com/watch?v=pgeuv7siAGo"
-        }, 
-        {
-          "titulo": "A Insolência Imoral dos Insensatos Parte 2",
-          "url": "https://www.youtube.com/watch?v=GK832etpB6U"
-        }, 
-        {
-          "titulo": "Do que Não Podemos Esquecer",
-          "url": "https://www.youtube.com/watch?v=VUpkdx6C-MU"
-        }, 
-        {
-          "titulo": "A Destruição Definitiva dos Descrentes",
-          "url": "https://www.youtube.com/watch?v=TyLXpIDtcJM"
-        }, 
-        {
-          "titulo": "A Promessa paciente",
-          "url": "https://www.youtube.com/watch?v=VB9rk48yu64"
-        }, 
-        {
-          "titulo": "Diante do Fim",
-          "url": "https://www.youtube.com/watch?v=ZIcOkZyWMPA"
-        }, 
-        {
-          "titulo": "A Sabedoria Salvífica da Santidade",
-          "url": "https://www.youtube.com/watch?v=xMOd8E4-nHk"
-        }, 
-        {
-          "titulo": "A Última Mensagem de Pedro",
-          "url": "https://www.youtube.com/watch?v=4OM0c_yjD8Y"
-        }, 
-        {
-          "titulo": "Os Herdeiros de Pedro",
-          "url": "https://www.youtube.com/watch?v=ciECmcJL7mM"
+          "titulo": "Usando Git Direito",
+          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
         }
       ]
     },
     {
-      "titulo": "Escola Bíblia Dominical",
+      "titulo": "Data Science e Inteligência Artificial",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "",
-        "url": ""
+        "text": "Cursos de Data Science na Alura",
+        "url": "https://www.alura.com.br/formacao-data-science"
       },
       "videos": [
         {
-          "titulo": "A Necessidade mais Urgente: O Evangelho e os Não Alcançados",
-          "url": "https://www.youtube.com/watch?v=FUOO730xcZk"
+          "titulo": "Teste de Turing",
+          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
         },
         {
-          "titulo": "Cristo em Praça Pública: O Evangelho e a Liberdade Religiosa",
-          "url": "https://www.youtube.com/watch?v=RHa0l-5IRW4"
+          "titulo": "O que é Data Science?",
+          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
         },
         {
-          "titulo": "Solitários em Família - O Evangelho, os Órfãos e as Viúvas",
-          "url": "https://www.youtube.com/watch?v=gcDRUJgdioE"
+          "titulo": "Melhor forma de aprender Python",
+          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
         },
         {
-          "titulo": "Guerra às Mulheres: O Evangelho e a Escravidão Sexual",
-          "url": "https://www.youtube.com/watch?v=FAI1lg_UOFQ"
-        },
-        {
-          "titulo": "Comprados por Preço - O Evangelho e a Moralidade Sexual",
-          "url": "https://www.youtube.com/watch?v=05kO1zg3rBU"
-        },
-        {
-          "titulo": "O Evangelho e o Casamento: Um Mistério Profundo",
-          "url": "https://www.youtube.com/watch?v=wZUny--0Q1s"
-        },
-        {
-          "titulo": "Holocausto Moderno: O Evangelho e o Aborto",
-          "url": "https://www.youtube.com/watch?v=zQFelH5KL6s"
-        },
-        {
-          "titulo": "O Evangelho e as Etnias: Unidade na Diversidade",
-          "url": "https://www.youtube.com/watch?v=MSUPPd29-HA"
-        },
-        {
-          "titulo": "O Evangelho e a Pobreza: Onde os Ricos e os Pobres Colidem",
-          "url": "https://www.youtube.com/watch?v=SCECj8MqLMQ"
+          "titulo": "Como ingressar no mercado de Data Science?",
+          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
         }
       ]
     },
     {
-      "titulo": "Jó",
+      "titulo": "Filmes",
       "cor": "orange",
       "videos": [
         {
-          "titulo": "Glorificando a Deus no sofrimento - Jó 1.1-2.10",
-          "url": "https://www.youtube.com/watch?v=-t02XywQTcY"
+          "titulo": "Interestellar",
+          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
         },
         {
-          "titulo": "Permanecendo fiel em meio ao sofrimento prolongado - Jó 2.11-31.40",
-          "url": "https://www.youtube.com/watch?v=jVvvc5gdCvs"
+          "titulo": "Gattaca",
+          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
         },
         {
-          "titulo": "Deus e a linguagem do sofrimento - Jó 32.1-37.24",
-          "url": "https://www.youtube.com/watch?v=5m-8LxTKKw8"
+          "titulo": "A Chegada",
+          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
         },
         {
-          "titulo": "A Soberania de Deus e a Confissão Humilde de Jó - Jó 38.1-42.17",
-          "url": "https://www.youtube.com/watch?v=EWrV5bKUfi0"
+          "titulo": "Feitiço do Tempo",
+          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+        }
+      ]
+    },
+    {
+      "titulo": "Games",
+      "cor": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      },
+      "videos": [
+        {
+          "titulo": "Final Fantasy 7",
+          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        },
+        {
+          "titulo": "Assassins Creed Valhalla",
+          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        },
+        {
+          "titulo": "God of War 4",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "Resident Evil 8",
+          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        },
+        {
+          "titulo": "Pokémon Let's Go Pikachu/Eevee",
+          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+        }
+      ]
+    },
+    {
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      },
+      "videos": [
+        {
+          "titulo": "Como estudar melhor?",
+          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+        },
+        {
+          "titulo": "Faculdade",
+          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+        },
+        {
+          "titulo": "Frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+          "titulo": "A mágica do Aprendizado",
+          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+        },
+        {
+          "titulo": "Como aprender a programar?",
+          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
         }
       ]
     }
