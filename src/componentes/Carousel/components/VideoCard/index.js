@@ -1,5 +1,6 @@
 import React from 'react';
 import { VideoCardContainer } from './styles';
+import SpanImg from '../../../../assets/img/logo_white_1.png';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -17,9 +18,16 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
         url={image}
         href={videoURL}
         target="_blank"
-        style={{ borderColor: categoryColor || 'red' }}
+        // style={{ borderColor: categoryColor || 'red' }}
         title={videoTitle}
-      > {videoTitle} </VideoCardContainer>
+      >
+        <div className="cardContent">
+          <div className="titulos">
+            {/* <img src={SpanImg} alt="Girl in a jacket" height="20px"/>  */}
+            <p>{videoTitle}</p>
+          </div>
+        </div>
+      </VideoCardContainer>
 
     </>
   );

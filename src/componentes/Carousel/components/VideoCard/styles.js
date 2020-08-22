@@ -11,6 +11,33 @@ export const VideoCardContainer = styled.a`
   background-size: cover;
   background-position: center;
 
+  .cardContent{
+    height: 168px;
+    width: 298px;
+
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+
+    display: flex;
+    align-items: flex-end;
+
+    img{
+      height: 12px;
+    }
+
+  }
+
+  .titulos{
+    background-color: black;
+
+    height: 40%;
+    width: 100%;
+
+    padding: 0px 16px;
+  }
+
+  p{
+    margin: 0;
+  }
   /* transition: 250ms all;
   &:hover { 
     margin: 10px;

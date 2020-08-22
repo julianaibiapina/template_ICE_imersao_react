@@ -30,6 +30,10 @@ const Container = styled.ul`
 
 export const SliderItem = styled.li`
   margin-right: 8px;
+  height: 168px;
+  width: 298px;
+
+  
 
   img {
     height: 168px;
