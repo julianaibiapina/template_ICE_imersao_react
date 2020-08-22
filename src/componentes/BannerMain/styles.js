@@ -7,6 +7,8 @@ export const BannerMainContainer = styled.section`
   background-size: cover; /* usa toda o espaço disponível pra ele*/
   background-position: center;
 
+ 
+
   @media(max-width: 800px){
     height: auto;
     min-height: 50vh;
@@ -17,9 +19,11 @@ export const ContentAreaContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   height: 100%;
+
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5), rgba(0,0,0,0.9));
 
   @media (max-width:800px){
     padding-top: 100px;

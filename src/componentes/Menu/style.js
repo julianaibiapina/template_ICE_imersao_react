@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const LogoImage = styled.img`
-    max-width: 168px;
+    max-height: 38px;
 
     @media (max-width: 800px){
-        max-width: 105px;
+        max-height: 28px;
     }
 `;
 
 export const MenuWrapper = styled.nav`
     
     width: 100%;
-    height: 94px;
+    height: 58px;
 
     position: fixed;
     z-index: 1;
@@ -29,8 +29,7 @@ export const MenuWrapper = styled.nav`
 
     @media(max-width: 800px) {
         height: 40px;
-        justify-content: center;
-        /* z-index: 4; */
+        /* justify-content: center; */
     }
 `;
 

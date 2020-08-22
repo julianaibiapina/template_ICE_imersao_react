@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './componentes/pages/Home';
+// import Home from './componentes/pages/Home';
+import Home from './componentes/pages/HomeICE';
 import CadastroVideo from './componentes/pages/cadastro/Video';
 import CadastroCategoria from './componentes/pages/cadastro/Categoria';
 
