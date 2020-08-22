@@ -15,7 +15,7 @@ function Carousel({
     <VideoCardGroupContainer>
       {categoryTitle && (
         <>
-          <Title >
+          <Title>
             {categoryTitle}
           </Title>
           {categoryExtraLink

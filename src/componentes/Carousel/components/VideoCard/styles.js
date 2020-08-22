@@ -24,3 +24,5 @@ export const VideoCardContainer = styled.a`
     opacity: .5;
   }
 `;
+
+
