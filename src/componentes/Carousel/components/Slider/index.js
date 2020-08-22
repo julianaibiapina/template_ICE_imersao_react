@@ -29,13 +29,14 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
-  margin-right: 16px;
+  margin-right: 8px;
+
   img {
-    margin: 16px;
+    height: 168px;
     width: 298px;
-    height: 197px;
     object-fit: cover;
   }
+
 `;
 
 
@@ -43,7 +44,7 @@ const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       centerMode: false,
       variableWidth: true,

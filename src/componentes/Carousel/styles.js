@@ -9,19 +9,21 @@ export const VideoCardGroupContainer = styled.section`
 `;
 
 export const Title = styled.h3`
-  font-size: 35px;
-  font-weight: normal;
+  font-size: 18px;
+  font-weight: bold;
   line-height: 1;
 
-  padding: 20px;
+  
   margin-bottom: 16px;
-  border-radius: 4px;
+  /* padding-left: 8px; */
+  /* border-left: 1px solid var(--primary); */
+  /* border-radius: 4px; */
 
   display: inline-block;
 
   @media(max-width: 800px){
     font-size: 18px;
-    padding: 10px;
+    /* padding: 10px; */
 
   }
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const BannerMainContainer = styled.section`
-  height: 80vh;
+  height: 90vh;
   color: var(--white);
   background-image: ${({backgroundImage}) => `url(${backgroundImage})`};
   background-size: cover; /* usa toda o espaço disponível pra ele*/
@@ -21,6 +21,8 @@ export const ContentAreaContainer = styled.section`
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
+
+  padding-top: 10%;
   height: 100%;
 
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5), rgba(0,0,0,0.9));

@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family:'Didact Gothic', sans-serif;
 }
 
 :root {
@@ -29,4 +30,12 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.font-title{
+  font-family:'Didact Gothic', sans-serif;
+}
+
+.font-subtitle{
+  font-family: 'Francois One', sans-serif;
 }

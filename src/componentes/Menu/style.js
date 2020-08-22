@@ -24,7 +24,7 @@ export const MenuWrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--black);
+    background-color: var(--grayDark);
     border-bottom: 2px solid var(--primary);
 
     @media(max-width: 800px) {

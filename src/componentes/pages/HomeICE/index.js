@@ -8,10 +8,10 @@ import Footer from '../../Footer';
 
 const AppWrapper = styled.div`
   background: var(--grayDark);
-  padding-top: 58px;
+  /* padding-top: 58px; */
 
   @media(max-width: 800px){
-    padding-top: 40px;
+    /* padding-top: 40px; */
   }
 `;
 
