@@ -29,7 +29,7 @@ function Home() {
       />
 
       <Carousel
-        ignoreFirstVideo
+        // ignoreFirstVideo
         category={dadosIniciais.categorias[0]}
       />
 

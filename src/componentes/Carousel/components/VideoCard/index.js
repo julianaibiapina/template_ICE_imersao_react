@@ -1,6 +1,6 @@
 import React from 'react';
 import { VideoCardContainer } from './styles';
-import SpanImg from '../../../../assets/img/logo_white_1.png';
+import IconCard from '../../../../assets/img/logo_white_1.png';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -10,8 +10,9 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-function VideoCard({ videoTitle, videoURL, categoryColor }) {
+function VideoCard({ videoTitle, videoURL, indexSermao }) {
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
+  indexSermao += 1;
   return (
     <>
       <VideoCardContainer
@@ -22,8 +23,11 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
         title={videoTitle}
       >
         <div className="cardContent">
+          <img src={IconCard} alt="logo ICE Sobral" className="iconCard" />
           <div className="titulos">
-            {/* <img src={SpanImg} alt="Girl in a jacket" height="20px"/>  */}
+            <p className="index">
+              {indexSermao}
+            </p>
             <p>{videoTitle}</p>
           </div>
         </div>
