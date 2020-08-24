@@ -8,12 +8,13 @@ const Container = styled.ul`
   margin: 0;
   .slick-prev,
   .slick-next {
+
     z-index: 50;
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 30px;
-    height: 30px;
+
+
     transform: initial;
     &:before {
       font-size: 30px;
@@ -33,16 +34,15 @@ export const SliderItem = styled.li`
   height: 168px;
   width: 298px;
 
-  
+ 
 
-  img {
+  /* img {
     height: 168px;
     width: 298px;
     object-fit: cover;
-  }
+  } */
 
 `;
-
 
 const Slider = ({ children }) => (
   <Container>
@@ -60,4 +60,4 @@ const Slider = ({ children }) => (
   </Container>
 );
 
-export default Slider; 
+export default Slider;

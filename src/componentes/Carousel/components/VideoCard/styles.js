@@ -14,21 +14,12 @@ export const VideoCardContainer = styled.a`
   .cardContent{
     height: 168px;
     width: 298px;
-    
 
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.3), rgba(0,0,0,0.65));
-    transition: background-image .3s;
-
-    &:hover{
-      background-image: linear-gradient(to bottom,rgba(0,0,0,0.3), rgba(0,0,0,0.75));
-    }
-    
 
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-
-   
   }
 
   .titulos{
@@ -40,8 +31,6 @@ export const VideoCardContainer = styled.a`
     padding: 0px 16px 16px 16px;
 
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: flex-end; */
   }
 
   p{
