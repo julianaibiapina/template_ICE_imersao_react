@@ -10,15 +10,12 @@ function Menu() {
     <MenuWrapper className="Menu">
 
       <Link to="/">
-        <LogoImage src={Logo} alt="logo aluraflix" />
+        <LogoImage src={Logo} alt="Igreja Cristã Evangélica de Sobral" />
       </Link>
 
       <Button as={Link} to="/">
         Sobre
       </Button>
-      {/* <Button as={Link} to="/cadastro/video">
-        Novo Vídeo
-      </Button> */}
     </MenuWrapper>
   );
 }
