@@ -1,13 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function ButtonLink(props) {
-  // props é um objeto
-  // children é o conteúdo da tag, lá onde ela é chamada
+function ButtonLink({ href, className, children }) {
   return (
-    <a href={props.href} className={props.className}>
-      {props.children}
+    <a href={href} className={className}>
+      {children}
     </a>
   );
 }
+
+ButtonLink.propTypes = {
+  className: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
+};
 
 export default ButtonLink;

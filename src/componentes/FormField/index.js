@@ -65,13 +65,11 @@ const Input = styled.input`
 
   /* caso queira pesquisar sobre isto abaixo, chama-se "tag de template string" */
   /* dá o poder e injetar qualquer CSS! muito massa */
-  ${function ({ hasValue }) {
-    return hasValue && css`
+  ${({ hasValue }) => hasValue && css`
       &:not([type='color']) + span{
     transform: scale(.6) translateY(-8px);
   }
-    `;
-  }}
+    `}
 `;
 
 function FormField({

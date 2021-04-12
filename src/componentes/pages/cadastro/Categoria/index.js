@@ -22,10 +22,9 @@ function CadastroCategoria() {
     cor: '#000000',
   };
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais); // useState() retorna o valor, e uma função que permite alterar esse valor
+  const [values, setValues] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
-    // chave é variável, ou seja, é dinâmico mesmo que seja um atributo por isso usa o recurso do JS []
     setValues({
       ...values,
       [chave]: valor,
@@ -40,10 +39,7 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    console.log('teste useEffect');
-
     const URL = 'http://localhost:3000/categorias';
-    // esta função retorna uma promise
     fetch(URL)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
@@ -63,8 +59,7 @@ function CadastroCategoria() {
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault(); // o submit default ele faz com reload, agora a gnt quer que ele submeta o form sem dar reload
-        console.log('Tentou enviar o form, né?');
+        infosDoEvento.preventDefault();
 
         setCategorias([
           ...categorias,

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const ListaVideos = styled.ul`
@@ -13,19 +14,19 @@ const ListaVideos = styled.ul`
     &::-webkit-scrollbar {
     width: 8px;
     }
-    
-    
+
+
     &::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
         /* -webkit-border-radius: 10px; */
         /* border-radius: 10px; */
     }
-    
+
     &::-webkit-scrollbar-thumb {
         /* -webkit-border-radius: 10px; */
         /* border-radius: 10px; */
-        background: rgba(169,169,169,0.5); 
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+        background: rgba(169,169,169,0.5);
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     }
 
     &::-webkit-scrollbar-thumb:hover{
@@ -71,5 +72,17 @@ function SideList({ category }) {
 
   );
 }
+
+SideList.propTypes = {
+  category: PropTypes.shape({
+    titulo: PropTypes.string.isRequired,
+    videos: PropTypes.arrayOf(
+      PropTypes.shape({
+        titulo: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
+      }),
+    ).isRequired,
+  }).isRequired,
+};
 
 export default SideList;
