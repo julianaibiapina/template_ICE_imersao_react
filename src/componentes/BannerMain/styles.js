@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const BannerMainContainer = styled.section`
   height: 90vh;
   color: var(--white);
-  background-image: ${({backgroundImage}) => `url(${backgroundImage})`};
+  background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
   background-size: cover; /* usa toda o espaço disponível pra ele*/
   background-position: center;
 
@@ -61,8 +61,6 @@ ContentAreaContainer.Description = styled.p`
     display: none;
   }
 `;
-
-
 
 export const WatchButton = styled.button`
   cursor: pointer;

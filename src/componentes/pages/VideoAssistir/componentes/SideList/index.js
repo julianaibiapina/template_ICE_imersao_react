@@ -53,7 +53,13 @@ function SideList({ category }) {
 
       <ListaVideos>
         {videos.map((video, index) => (
-          <li><a href={video.url}>{index} {video.titulo}</a></li>
+          <li>
+            <a href={video.url}>
+              {index}
+              {' '}
+              {video.titulo}
+            </a>
+          </li>
 
         ))}
       </ListaVideos>
