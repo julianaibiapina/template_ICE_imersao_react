@@ -31,9 +31,12 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
-  margin-right: 8px;
-  height: 168px;
-  width: 298px;
+  margin: 0 4px;
+  min-height: 210px;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Slider = ({ children }) => (

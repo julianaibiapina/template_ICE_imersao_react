@@ -4,27 +4,35 @@ import styled from 'styled-components';
 export const VideoCardContainer = styled.a`
 
   display: inline-block;
-  height: 168px;
-  width: 298px;
+  height: 170px;
+  width: 300px;
 
   background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
   background-position: center;
 
-  .cardContent{
-    height: 168px;
-    width: 298px;
+  transition: transform 200ms;
 
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.3), rgba(0,0,0,0.65));
+  &:hover {
+    transform: scale(1.2);
+
+    .cardContent {
+      background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0.55));
+    }
+  }
+
+  .cardContent{
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.3), rgba(0,0,0,0.75));
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
   .titulos{
-    /* background-color: black; */
-
     height: 40%;
     width: 100%;
 
@@ -56,8 +64,4 @@ export const VideoCardContainer = styled.a`
 
 
   }
-
-   
-
-  
 `;
