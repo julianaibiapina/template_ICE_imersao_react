@@ -18,7 +18,7 @@
   "scripts": {
     "client": "npx react-scripts start",
     "server": "node ./server.js",
-    "dev": "concurrently \"npx react-scripts start\" \"npm run server\"",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\"",
     "start": "npm run server",
     "build": "react-scripts build",
     "test": "react-scripts test",
