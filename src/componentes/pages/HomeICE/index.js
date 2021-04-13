@@ -15,17 +15,15 @@ const AppWrapper = styled.div`
   }
 `;
 
-
 function Home() {
   return (
     <AppWrapper>
-      <Menu/>
-     
+      <Menu />
 
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"Algum texto de chamada para assistir ao último vídeo!"}
+        videoDescription="Algum texto de chamada para assistir ao último vídeo!"
       />
 
       <Carousel
@@ -39,11 +37,11 @@ function Home() {
 
       <Carousel
         category={dadosIniciais.categorias[2]}
-      />      
+      />
 
       <Carousel
         category={dadosIniciais.categorias[3]}
-      />      
+      />
 
       <Footer />
     </AppWrapper>

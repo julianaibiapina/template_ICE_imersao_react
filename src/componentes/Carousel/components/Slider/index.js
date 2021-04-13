@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
+import PropTypes from 'prop-types';
 import SlickSlider from 'react-slick';
 import styled from 'styled-components';
 
@@ -20,7 +21,7 @@ const Container = styled.ul`
       font-size: 30px;
     }
   }
-  
+
   .slick-prev {
     left: 0;
   }
@@ -30,18 +31,12 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
-  margin-right: 8px;
-  height: 168px;
-  width: 298px;
+  margin: 0 4px;
+  min-height: 210px;
 
- 
-
-  /* img {
-    height: 168px;
-    width: 298px;
-    object-fit: cover;
-  } */
-
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Slider = ({ children }) => (
@@ -59,5 +54,9 @@ const Slider = ({ children }) => (
     </SlickSlider>
   </Container>
 );
+
+Slider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Slider;

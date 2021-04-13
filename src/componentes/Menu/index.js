@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/logo_white.png';
 import Button from '../Button';
 
-import { LogoImage, MenuWrapper } from './style.js';
+import { LogoImage, MenuWrapper } from './style';
 
 function Menu() {
   return (

@@ -32,4 +32,3 @@ export const MenuWrapper = styled.nav`
         /* justify-content: center; */
     }
 `;
-

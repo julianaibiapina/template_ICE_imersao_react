@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Footer from '../Footer';
 import Menu from '../Menu';
-import styled from 'styled-components';
 
 const Main = styled.main`
     background-color: var(--black);
@@ -19,18 +20,22 @@ const Main = styled.main`
     }
 `;
 
-function PageDefault({ children }){
-    return (
-        <>
-            <Menu/>
+function PageDefault({ children }) {
+  return (
+    <>
+      <Menu />
 
-            <Main>
-                {children}
-            </Main>
-            
-            <Footer/>
-        </>
-    )
+      <Main>
+        {children}
+      </Main>
+
+      <Footer />
+    </>
+  );
 }
+
+PageDefault.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default PageDefault;
